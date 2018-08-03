@@ -364,51 +364,179 @@ section{
 // 品牌好店
 .goodStore{
     width: 100%;
-    height: 425px;
+    height: 450px;
     background: #f5f5f5;
     .goodStore_con{
         width: 1190px;
-        height: 100%;
+        height: 450px;
         margin: 0 auto;
-        padding-top: 25px;
+        overflow: hidden;
         .goodStore_top{
             width: 100%;
             height: 50px;
-            background: red;
+            margin-top: 25px;
             .goodStore_top_img{
+                overflow: hidden;
+                a:nth-child(1){
+                    float: left;
+                    img:nth-child(1){
+                        width: 7px;
+                        height: 20px;
+                        display: block;
+                        float: left;
+                        margin-top: 15px;
+                    }
+                    p{
+                        font-size: 22px;
+                        color: #333;
+                        float: left;
+                        line-height: 50px;
+                        margin-left: 10px;
+                    }
+                }               
+                a:nth-child(2){
+                    float: right;
+                    width: 120px;
+                    height: 30px;
+                    background: #fe5878;
+                    text-align: center;
+                    line-height: 30px;
+                    border-radius: 15px;
+                    font-size: 14px;
+                    color: #fff;
+                    margin-top: 6px;
+                    img{
+                        margin-left: 3px;
+                        width: 6px;
+                        height: 10px;
+                    }
+                }
+                a:nth-child(2):hover{
+                    background: #eb4263;
+                }
+            }                     
+        }
+        .goodStore_cen{
+            width: 1190px;
+            height: 380px;
+            overflow: hidden;
+            .goodStore_div{
+                width: 590px;
+                height: 180px;
+                float: left;
+                position: relative;
                 img{
-                    width: 7px;
-                    height: 20px;
+                    width: 590px;
+                    height: 180px;
+                }
+                .goodStore_div_cc{
+                    width: 250px;
+                    height: 140px;
+                    position: absolute;
+                    left: 20px;
+                    top: 20px;
+                    background: rgba(255,255,255,0.8);
+                    border-radius: 8px;
+                    a{
+                        display: block;
+                        width: 100%;
+                        text-align: center;
+                        h3{
+                            font-weight: 100;
+                            color: #333;
+                            line-height: 37px;
+                            font-size: 26px;
+                            margin-top: 21px;
+                        }
+                        p{
+                            color: #999;
+                            font-size: 16px;
+                            line-height: 26px;
+                        }
+                    }
+                    a:last-child{
+                        width: 116px;
+                        height: 34px;
+                        line-height: 34px;
+                        font-size: 16px;
+                        text-align: center;
+                        color: #fff;
+                        background: #fe5878;
+                        border-radius: 17px;
+                        margin: 0 auto;
+                        margin-top: 5px;
+                        img{
+                            width: 6px;
+                            height: 10px;
+                            margin-left: 5px;
+                        }
+                    }
+                    a:last-child:hover{
+                        background: #eb4263;
+                    }
+                }
+                .goodStore_div_rr{
                     display: block;
-                    float: left;
-                    margin-top: 15px;
+                    width: 76px;
+                    height: 32px;
+                    background: rgba(0,0,0,0.5);
+                    border-top-left-radius: 6px;
+                    border-bottom-left-radius: 6px;
+                    position: absolute;
+                    top: 20px;
+                    right: 0px;
+                    color: #fff;
+                    font-size: 14px;
+                    line-height: 32px;
+                    text-align: center;
+                    span{
+                        color: #ff8099;
+                    }
                 }
-                p{
-                    font-size: 22px;
-                    color: #333;
-                    float: left;
-                    line-height: 50px;
-                    margin-left: 10px;
-                }
-            }          
-            a{
-                float: right;
-                width: 120px;
-                height: 30px;
-                background: #fe5878;
-                text-align: center;
-                line-height: 30px;
-                border-radius: 15px;
-                font-size: 14px;
-                color: #fff;
-                margin-top: 10px;
-                img{
-                    margin-top: 10px;
-                    margin-left: 3px;
-                    width: 6px;
-                    height: 10px;
-                }
+            }
+            .goodStore_div:nth-child(1){
+                margin-bottom: 10px;
+            }
+            .goodStore_div:nth-child(2){
+                margin-bottom: 10px;
+            }
+            .goodStore_div:nth-child(2n){
+                margin-left: 10px;
+            }
+        }
+    }
+    
+}
+
+// 精选好货
+.selectGood{
+    width: 100%;
+    height: 500px;
+    background: red;
+    .selectGood_con{
+        width: 1190px;
+        height: 400px;
+        margin: 0 auto;
+        background: yellow;
+        overflow: hidden;
+        a{
+            display: block;
+            width: 1190px;
+            margin-top: 25px;
+            img{
+                width: 7px;
+                height: 20px;
+                float: left;
+                margin-top: 14px;
+                margin-right: 10px;
+            }
+            p{
+                float: left;
+                line-height: 48px;
+                font-size: 22px;
+                color: #333;
             }
         }
     }
 }
+
