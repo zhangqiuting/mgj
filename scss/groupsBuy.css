@@ -573,15 +573,13 @@ section .section_cont .section_right img:last-child {
 
 .selectGood {
   width: 100%;
-  height: 500px;
-  background: red;
+  background: #f5f5f5;
+  padding-bottom: 100px;
 }
 
 .selectGood .selectGood_con {
   width: 1190px;
-  height: 400px;
   margin: 0 auto;
-  background: yellow;
   overflow: hidden;
 }
 
@@ -589,6 +587,7 @@ section .section_cont .section_right img:last-child {
   display: block;
   width: 1190px;
   margin-top: 25px;
+  overflow: hidden;
 }
 
 .selectGood .selectGood_con a img {
@@ -604,4 +603,154 @@ section .section_cont .section_right img:last-child {
   line-height: 48px;
   font-size: 22px;
   color: #333;
+}
+
+.selectGood .selectGood_con .selectGood_click {
+  width: 1190px;
+}
+
+.selectGood .selectGood_con .selectGood_click .title {
+  width: 1190px;
+  height: 48px;
+  background: #fff;
+}
+
+.selectGood .selectGood_con .selectGood_click .title .title-list {
+  width: 1190px;
+  height: 48px;
+  position: relative;
+}
+
+.selectGood .selectGood_con .selectGood_click .title .title-list li {
+  margin: 0 34px;
+  padding: 0 20px;
+  font-size: 20px;
+  line-height: 44px;
+  text-align: center;
+  float: left;
+  display: inline;
+}
+
+.selectGood .selectGood_con .selectGood_click .title .title-list li.on {
+  color: #fe5878;
+  border-bottom: 4px solid #fe5878;
+}
+
+.selectGood .selectGood_con .selectGood_click .product-wrap {
+  margin-top: 20px;
+}
+
+.selectGood .selectGood_con .selectGood_click .product-wrap .product {
+  height: 420px;
+  position: relative;
+  display: none;
+}
+
+.selectGood .selectGood_con .selectGood_click .product-wrap .product .show {
+  display: block;
+}
+
+.selectGood .selectGood_con .selectGood_click .product-wrap .product ul li {
+  width: 220px;
+  float: left;
+  margin-right: 22px;
+  margin-bottom: 20px;
+}
+
+.selectGood .selectGood_con .selectGood_click .product-wrap .product ul li a {
+  margin-top: 0;
+}
+
+.selectGood .selectGood_con .selectGood_click .product-wrap .product ul li a img {
+  width: 220px;
+  height: 293px;
+  float: left;
+  margin-top: 0;
+}
+
+.selectGood .selectGood_con .selectGood_click .product-wrap .product ul li .mt10 {
+  width: 220px;
+  height: 118px;
+  background: #fff;
+}
+
+.selectGood .selectGood_con .selectGood_click .product-wrap .product ul li .mt10 a {
+  display: block;
+  margin-top: 5px;
+  margin-left: 10px;
+  width: 100%;
+}
+
+.selectGood .selectGood_con .selectGood_click .product-wrap .product ul li .mt10 a p {
+  width: 200px;
+  font-size: 14px;
+  line-height: 21px;
+  color: #333;
+}
+
+.selectGood .selectGood_con .selectGood_click .product-wrap .product ul li .mt10 a:nth-child(2) {
+  width: 100%;
+}
+
+.selectGood .selectGood_con .selectGood_click .product-wrap .product ul li .mt10 a:nth-child(2) span:nth-child(1) {
+  width: 40px;
+  height: 23px;
+  border: 1px solid #fe5878;
+  color: #fe5878;
+  text-align: center;
+  line-height: 23px;
+  font-size: 12px;
+  float: left;
+}
+
+.selectGood .selectGood_con .selectGood_click .product-wrap .product ul li .mt10 a:nth-child(2) span:nth-child(2) {
+  height: 25px;
+  background: #fe5878;
+  color: #fff;
+  text-align: center;
+  line-height: 25px;
+  font-size: 12px;
+  padding: 0 10px;
+  float: left;
+  border-top-right-radius: 13px;
+  border-bottom-right-radius: 13px;
+}
+
+.selectGood .selectGood_con .selectGood_click .product-wrap .product ul li .mt10 a:nth-child(3) {
+  width: 100%;
+  font-size: 20px;
+  color: #333;
+  margin-left: 8px;
+}
+
+.selectGood .selectGood_con .selectGood_click .product-wrap .product ul li .mt10 a:nth-child(3) span {
+  text-decoration: line-through;
+  color: #999;
+  font-size: 14px;
+  margin-left: 8px;
+}
+
+.selectGood .selectGood_con .selectGood_click .product-wrap .product ul li .mt10 a.imgwrap {
+  display: block;
+}
+
+.selectGood .selectGood_con .selectGood_click .product-wrap .product ul li:nth-child(5n) {
+  margin-right: 0;
+}
+
+.fr {
+  display: inline;
+  float: right;
+}
+
+.cf {
+  zoom: 1;
+}
+
+.cf:after {
+  content: "";
+  clear: both;
+  display: block;
+  height: 0;
+  overflow: hidden;
 }
