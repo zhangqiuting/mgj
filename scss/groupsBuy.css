@@ -292,11 +292,42 @@ section .section_cont .section_right img:last-child {
   width: 230px;
   height: 294px;
   float: left;
+  position: relative;
 }
 
 .banner .big_banner .big_banner_top .big_ban_t_left img {
   width: 230px;
   height: 294px;
+}
+
+.banner .big_banner .big_banner_top .big_ban_t_left .content {
+  width: 160px;
+  height: 40px;
+  position: absolute;
+  left: 36px;
+  bottom: 32px;
+}
+
+.banner .big_banner .big_banner_top .big_ban_t_left .content span {
+  float: left;
+  width: 40px;
+  height: 40px;
+  background: #000;
+  border-radius: 5px;
+  color: #fff;
+  line-height: 40px;
+  text-align: center;
+  font-size: 30px;
+}
+
+.banner .big_banner .big_banner_top .big_ban_t_left .content i {
+  width: 20px;
+  text-align: center;
+  line-height: 40px;
+  font-size: 30px;
+  font-style: normal;
+  float: left;
+  color: #333;
 }
 
 .banner .big_banner .big_banner_top .big_ban_t_right {
@@ -636,6 +667,35 @@ section .section_cont .section_right img:last-child {
   border-bottom: 4px solid #fe5878;
 }
 
+.selectGood .selectGood_con .selectGood_click ._clickCont2 {
+  width: 50px;
+  position: fixed;
+  left: 5px;
+  bottom: 10px;
+}
+
+.selectGood .selectGood_con .selectGood_click ._clickCont2 ._clickUl2 {
+  width: 50px;
+  background: #969296;
+  position: fixed;
+  left: 5px;
+  bottom: 10px;
+}
+
+.selectGood .selectGood_con .selectGood_click ._clickCont2 ._clickUl2 li {
+  width: 50px;
+  height: 40px;
+  border-bottom: 1px solid #838183;
+  text-align: center;
+  line-height: 40px;
+  color: #fff;
+  font-size: 12px;
+}
+
+.selectGood .selectGood_con .selectGood_click ._clickCont2 ._clickUl2 li.focus {
+  background: #fe5878;
+}
+
 .selectGood .selectGood_con .selectGood_click .product-wrap {
   margin-top: 20px;
 }
@@ -655,6 +715,7 @@ section .section_cont .section_right img:last-child {
   float: left;
   margin-right: 22px;
   margin-bottom: 20px;
+  position: relative;
 }
 
 .selectGood .selectGood_con .selectGood_click .product-wrap .product ul li a {
@@ -668,6 +729,22 @@ section .section_cont .section_right img:last-child {
   margin-top: 0;
 }
 
+.selectGood .selectGood_con .selectGood_click .product-wrap .product ul li a i {
+  display: block;
+  width: 85px;
+  height: 29px;
+  border-top-right-radius: 8px;
+  background: rgba(0, 0, 0, 0.6);
+  text-align: center;
+  line-height: 29px;
+  font-size: 12px;
+  color: #fff;
+  position: absolute;
+  left: 0px;
+  bottom: 118px;
+  font-style: normal;
+}
+
 .selectGood .selectGood_con .selectGood_click .product-wrap .product ul li .mt10 {
   width: 220px;
   height: 118px;
@@ -676,7 +753,6 @@ section .section_cont .section_right img:last-child {
 
 .selectGood .selectGood_con .selectGood_click .product-wrap .product ul li .mt10 a {
   display: block;
-  margin-top: 5px;
   margin-left: 10px;
   width: 100%;
 }
@@ -686,6 +762,7 @@ section .section_cont .section_right img:last-child {
   font-size: 14px;
   line-height: 21px;
   color: #333;
+  margin-top: 5px;
 }
 
 .selectGood .selectGood_con .selectGood_click .product-wrap .product ul li .mt10 a:nth-child(2) {

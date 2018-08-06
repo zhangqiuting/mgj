@@ -257,10 +257,38 @@ section{
 			.big_ban_t_left{
 				width: 230px;
 				height: 294px;
-				float: left;
+                float: left;
+                position: relative;
 				img{
 					width: 230px;
 					height: 294px;
+                }
+                .content{
+					width: 160px;
+					height: 40px;
+					position: absolute;
+					left: 36px;
+					bottom: 32px;
+					span{
+						float: left;
+						width: 40px;
+						height: 40px;
+						background: #000;
+						border-radius: 5px;
+						color: #fff;
+						line-height: 40px;
+						text-align: center;
+						font-size: 30px;
+					}
+					i{
+						width: 20px;
+						text-align: center;
+						line-height: 40px;
+						font-size: 30px;
+						font-style: normal;
+						float: left;
+						color: #333;
+					}
 				}
 			}
 			.big_ban_t_right{
@@ -561,6 +589,31 @@ section{
                     }
                 }               
             }
+            ._clickCont2{
+                width: 50px;
+                position: fixed;
+                left: 5px;
+                bottom: 10px;
+                ._clickUl2{
+                    width: 50px;
+                    background: #969296;
+                    position: fixed;
+                    left: 5px;
+                    bottom: 10px;
+                    li{
+                        width: 50px;
+                        height: 40px;
+                        border-bottom: 1px solid #838183;
+                        text-align: center;
+                        line-height: 40px;
+                        color: #fff;
+                        font-size: 12px;
+                    }
+                    li.focus{ 
+                        background: #fe5878; 
+                    }
+                }
+            }
             .product-wrap{
                 margin-top: 20px;
                 .product{ 
@@ -576,6 +629,7 @@ section{
                             float: left;
                             margin-right: 22px;
                             margin-bottom: 20px;
+                            position: relative;
                             a{
                                 margin-top: 0;
                                 img{
@@ -584,14 +638,28 @@ section{
                                     float: left;
                                     margin-top: 0;
                                 }
+                                i{
+                                    display: block;
+                                    width: 85px;
+                                    height: 29px;
+                                    border-top-right-radius: 8px;
+                                    background: rgba(0,0,0,0.6);
+                                    text-align: center;
+                                    line-height: 29px;
+                                    font-size: 12px;
+                                    color: #fff;
+                                    position: absolute;
+                                    left: 0px;
+                                    bottom: 118px;
+                                    font-style: normal;
+                                }
                             }
                             .mt10{
                                 width: 220px;
                                 height: 118px;
                                 background: #fff;
                                 a{
-                                    display: block;
-                                    margin-top: 5px;
+                                    display: block;   
                                     margin-left: 10px;
                                     width: 100%;
                                     p{
@@ -599,6 +667,7 @@ section{
                                         font-size: 14px;
                                         line-height: 21px;
                                         color: #333;
+                                        margin-top: 5px;
                                     }
                                 }
                                 a:nth-child(2){

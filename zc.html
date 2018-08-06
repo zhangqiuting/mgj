@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>注册</title>
+<link rel="stylesheet" type="text/css" href="css/zc.css" >
+<link rel="stylesheet" type="text/css" href="css/public.css">
+</head>
+<body>
+<!-- zc_header -->
+<div class="zc_header ">
+	<div class="zc_header_con">
+		<img src="img/01.jpg" alt="">
+		<p>依《网络安全法》相关要求，即日起蘑菇街会员登陆需绑定手机。为保障您的账户安全及正常使用，如您尚未绑定，请尽快完成绑定，感谢您的理解和支持!</p>
+	</div>
+</div>
+
+<!-- content -->
+<div class="content">
+	<div class="content1">
+		<div class="clickBox">
+			<div class="ewm01"></div>
+			<div class="ewm02"></div>
+		</div>		
+		<div class="ewm_con">
+			<img src="img/zc_sao.png" alt="">
+			<img src="img/zcer.png" alt="">
+			<a href="#">点击下载蘑菇街APP</a>
+		</div>
+		<form action="">
+			<div class="ptdl">
+				<ul class="prtop">
+					<li>普通登录</li>
+					<li>手机无密码登录</li>					
+				</ul>
+				<div class="prbot">
+					<input type="text" placeholder="用户名/邮箱/手机号">
+					<input type="password" placeholder="密码">
+					<input type="submit" value="登录">
+					<div class="log">
+						<a href="#"><img src="img/qq.png" alt="">QQ登录</a>
+						<a href="#"><img src="img/weixin.png" alt="">微信登录</a>
+					</div>
+					<a href="#" class="fog">忘记密码</a>
+				</div>
+			</div>
+		</form>	
+	</div>
+</div>
+	
+<!-- footer -->
+<div class="footer">
+		<div class="footer_top">
+			<dl>
+				<dt>-新手帮助-</dt>
+				<dd>
+					<a href="#">常见问题</a>
+					<a href="#">自助服务</a>
+					<a href="#">联系客服</a>
+					<a href="#">意见反馈</a>
+				</dd>
+			   
+			</dl>
+			<dl>
+				<dt>-权益保障-</dt>
+				<dd>
+					<a>全国包邮</a>
+					<a>7天无理由退货</a>
+					<a>退货运费补贴</a>
+					<a>限时发货</a>
+				</dd>
+				
+			</dl>
+			<dl>
+				<dt>-支付方式-</dt>
+				<dd>
+					<a>微信支付</a>
+					<a>支付宝</a>
+					<a>自付美支付</a>
+				</dd>
+				
+			</dl>
+			<dl>
+				<dt>-移动端客户下载-</dt>
+				<dd>
+					<a>蘑菇街<img src="img/ma01.png" alt=""></a>
+					<a>美丽说<img src="img/ma02.png" alt=""></a>
+					<a>uni引力<img src="img/ma03.png" alt=""></a>
+				</dd>
+				
+			</dl>
+		</div>
+		<div class="footer_bot">
+			<div class="footer_bot_t">
+				<a href="#">美丽说</a><span>|</span>
+				<a href="#">淘粉吧</a><span>|</span>
+				<a href="#">QQ钱包</a><span>|</span>
+				<a href="#">时尚品牌网</a><span>|</span>
+				<a href="#">装修</a><span>|</span>
+				<a href="#">慧聪网</a><span>|</span>
+			</div>
+			<div class="footer_bot_c">
+				<a href="#">关于我们</a>
+				<a href="#">招聘信息</a>
+				<a href="#">联系我们</a>
+				<a href="#">商家入驻</a>
+				<a href="#">商家后台</a>
+				<a href="#">蘑菇商学院</a>
+				<a href="#">商家社区</a>
+				<a href="#">规则中心</a>
+				<a href="#">有害信息举报</a>
+				<span>©2017 Mogujie.com 杭州卷瓜网络有限公司</span>
+			</div>
+			<div class="footer_bot_f">
+				<span>营业执照:<a>913301065526808764</a>&nbsp;&nbsp;|&nbsp;&nbsp;</span>
+				<span>网络文化经营许可证:<a>浙网文（2016）0349-219号</a>&nbsp;&nbsp;|&nbsp;&nbsp;</span>
+				<span>增值电信业务经营许可证:<a>浙B2-20110349</a>&nbsp;&nbsp;|&nbsp;&nbsp;</span>
+				<span>安全责任书:<a>浙公网安备 33010602002329号</a>&nbsp;&nbsp;|&nbsp;&nbsp;</span>
+			</div>
+			<div class="footer_bot_bot">
+				<a href="#">互联网药品信息服务资格证书编号：（浙)-经营性-2018-0002</a><span>|</span>
+				<a href="#">浙网食A33010003</a><span>|</span>
+				<a href="#">出版物网络交易平台服务经营备案证</a><span>|</span>
+				<a href="#">（浙）网械平台备字[2018]第00006号</a><span>|</span>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
+<script src="js/jquery-1.11.0.min.js"></script>
+<script type="text/javascript">
+$(function(){
+	$('.ewm02').css('display','none');
+	$(".clickBox").click(function(){
+		if($(".ewm01").css('display','block')){
+			// $(".ewm01").css('display','none');
+			$('.ewm02').css('display','block');
+			$(".ewm_con").css('display','none');
+			$("form").css('display','block');
+		}
+		if($('.ewm02').css('display','block')){
+			$('.ewm02').css('display','none');
+			$(".ewm01").css('display','block');
+			$(".ewm_con").css('display','block');
+			$("form").css('display','none');
+		}		
+	});
+});
+</script>
