@@ -17,36 +17,54 @@
 
 <!-- content -->
 <div class="content">
-	<div class="content1">
-		<div class="clickBox">
-			<div class="ewm01"></div>
-			<div class="ewm02"></div>
-		</div>		
-		<div class="ewm_con">
-			<img src="img/zc_sao.png" alt="">
-			<img src="img/zcer.png" alt="">
-			<a href="#">点击下载蘑菇街APP</a>
-		</div>
-		<form action="">
-			<div class="ptdl">
-				<ul class="prtop">
-					<li>普通登录</li>
-					<li>手机无密码登录</li>					
+		<div class="content1">
+			<div class="emptyBox"></div>
+			<div class="clickBox">
+				<ul class="cliul">
+					<li class="ewm01 unde"></li>
+					<li class="ewm02"></li>
 				</ul>
-				<div class="prbot">
-					<input type="text" placeholder="用户名/邮箱/手机号">
-					<input type="password" placeholder="密码">
-					<input type="submit" value="登录">
-					<div class="log">
-						<a href="#"><img src="img/qq.png" alt="">QQ登录</a>
-						<a href="#"><img src="img/weixin.png" alt="">微信登录</a>
+				<div class="imgBox">
+					<div class="ewm_con imgsPro shows">
+						<img src="img/zc_sao.png" alt="">
+						<img src="img/zcer.png" alt="">
+						<a href="#">点击下载蘑菇街APP</a>
 					</div>
-					<a href="#" class="fog">忘记密码</a>
+					<form action="" class="imgsPro">
+						<div class="ptdl">
+							<ul class="prtop">
+								<li class="on">普通登录</li>
+								<li>手机无密码登录</li>					
+							</ul>
+							<div class="product-wrap">
+								<div class="prbot product show">
+									<input type="text" placeholder="用户名/邮箱/手机号" id="userId">
+									<input type="password" placeholder="密码" id="passwordId">
+									<input type="submit" value="登录">
+									<div class="log">
+										<a href="#"><img src="img/qq.png" alt="">QQ登录</a>
+										<a href="#"><img src="img/weixin.png" alt="">微信登录</a>
+									</div>
+									<a href="#" class="fog">忘记密码</a>
+								</div>
+								<div class="prcon product">
+									<input type="text" placeholder="手机号" id="phoneId">
+									<input type="button" value="获取动态密码">
+									<input type="text" placeholder="动态密码">
+									<input type="submit" value="登录">
+									<div class="log">
+										<a href="#"><img src="img/qq.png" alt="">QQ登录</a>
+										<a href="#"><img src="img/weixin.png" alt="">微信登录</a>
+									</div>
+									<a href="#" class="fog">忘记密码</a>
+								</div>
+							</div>
+						</div>
+					</form>	
 				</div>
-			</div>
-		</form>	
+			</div>	
+		</div>
 	</div>
-</div>
 	
 <!-- footer -->
 <div class="footer">
@@ -91,14 +109,6 @@
 			</dl>
 		</div>
 		<div class="footer_bot">
-			<div class="footer_bot_t">
-				<a href="#">美丽说</a><span>|</span>
-				<a href="#">淘粉吧</a><span>|</span>
-				<a href="#">QQ钱包</a><span>|</span>
-				<a href="#">时尚品牌网</a><span>|</span>
-				<a href="#">装修</a><span>|</span>
-				<a href="#">慧聪网</a><span>|</span>
-			</div>
 			<div class="footer_bot_c">
 				<a href="#">关于我们</a>
 				<a href="#">招聘信息</a>
@@ -129,21 +139,47 @@
 </html>
 <script src="js/jquery-1.11.0.min.js"></script>
 <script type="text/javascript">
-$(function(){
-	$('.ewm02').css('display','none');
-	$(".clickBox").click(function(){
-		if($(".ewm01").css('display','block')){
-			// $(".ewm01").css('display','none');
-			$('.ewm02').css('display','block');
-			$(".ewm_con").css('display','none');
-			$("form").css('display','block');
-		}
-		if($('.ewm02').css('display','block')){
-			$('.ewm02').css('display','none');
-			$(".ewm01").css('display','block');
-			$(".ewm_con").css('display','block');
-			$("form").css('display','none');
-		}		
+
+// 登录切换效果
+$(".cliul").on('click',function(){
+    if($(".ewm01").css('display','block')){
+        $('.ewm01').css('display','none');
+		$('.ewm_con').css('display','none');
+		$('.ewm02').css('display','block');
+		$('form').css('display','block');
+	}
+	// if($('.ewm02').css('display','block')){
+	// 	$('.ewm02').css('display','none');
+	// 	$('form').css('display','none');
+	// 	$(".ewm01").css('display','block');
+	// 	$('.ewm_con').css('display','block');
+	// }
+});
+
+$(function(){		
+	$('.ptdl li').click(function(){
+		var liindex = $('.ptdl li').index(this);
+		$(this).addClass('on').siblings().removeClass('on');
+		$('.product-wrap div.product').eq(liindex).fadeIn(150).siblings('div.product').hide();
+		var liWidth = $('.ptdl li').width();
 	});
 });
+
+// 正则验证
+// 用户名/邮箱/手机号
+$("#userId").onblur=function(){
+	if(checkAll("userName",this.value)==false){
+		$("userMsg").innerHTML="长度只能在6-16个字符之间";
+	}else{
+		$("userMsg").innerHTML="√";
+	}
+}
+//密码
+$("#passwordId").onblur=function(){
+	if(checkAll("password",this.value)==false){
+		$("passwordMsg").innerHTML="长度只能在8-16个字符之间";
+	}else{
+		$("passwordMsg").innerHTML="√";
+	}
+}
 </script>

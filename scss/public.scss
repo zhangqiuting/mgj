@@ -109,6 +109,28 @@ header{
 				height: 31px;
 				background: url(../img/bgImg.png) 0px -462px;
 			}
+			.head_right_a0{
+				position: relative;
+				p{
+					width: 190px;
+					height: 53px;
+					background: #eeeeee;
+					border: 1px solid #dddddd;
+					color: #999;
+					border-top: none;
+					border-radius: 0 0 6px 6px;
+					position: absolute;
+					top: 31px;
+					left: -98px;
+					z-index: 999;
+					line-height: 53px;
+					text-align: center;
+					display: none;
+				}
+			}
+			.head_right_a0:hover p{
+				display: block;
+			}
 			.head_right_a1{
 				.head_right_cus{
 					display: none;
