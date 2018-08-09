@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title></title>
+<style>
+ul{
+	list-style: none;
+}
+#ulBox li{
+	width:200px;
+	float:left;
+}
+</style>
+</head>
+<body>
+	<div id="goodsBox">
+		<ul id="ulBox">
+		</ul>
+	</div>
+</body>
+</html>
+<script src="js/jquery-1.8.3.min.js"></script>
+<script type="text/javascript">
+$(function(){
+	getGoodsList();
+});
+
+function getGoodsList(){
+	let xhr = new XMLHttpRequest();		
+	xhr.open("get","php/getGoodsList.php?goodsId=01",true);		
+	xhr.onreadystatechange = function(){
+		if(xhr.readyState==4 && xhr.status==200){
+			showGoodsList(xhr.responseText);
+		}
+	}		
+	xhr.send();
+}
+
+function showGoodsList(str){
+	let arr = JSON.parse(str);
+	let htmlStr = "";
+	for(let i=0;i<arr.length;i++){
+		htmlStr+=
+			"<li>商品编号："+arr[i].goodsId+
+			"<br/>商品名称："+arr[i].goodsName+
+			"<br/>商品类型："+arr[i].goodsType+
+			"<br/>商品价格："+arr[i].goodsPrice+
+			"<br/>商品库存："+arr[i].goodsCount+
+			"<br/>商品描述："+arr[i].goodsDesc+
+			"<br/>商品图片：<img src='"+arr[i].goodsImg+"'/>"+
+			"<br/>备用1："+arr[i].beiyong1+
+			"<br/>备用2："+arr[i].beiyong2+
+			"<br/>备用3："+arr[i].beiyong3+
+			"<br/>备用4："+arr[i].beiyong4+
+			"<br/>备用5："+arr[i].beiyong5+
+			"<br/>备用6："+arr[i].beiyong6+
+			"<br/>备用7："+arr[i].beiyong7+
+			"<br/>备用8："+arr[i].beiyong8+
+			"<br/>备用9："+arr[i].beiyong9+
+			"<br/>备用10："+arr[i].beiyong10+
+			"<br/>备用11："+arr[i].beiyong11+
+			"<br/>备用12："+arr[i].beiyong12+
+			"<br/>备用13："+arr[i].beiyong13+"<br/><hr/></li>";
+	}
+	$("#ulBox").html(htmlStr);
+}
+</script>
