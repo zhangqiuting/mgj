@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>首页</title>
+<link rel="stylesheet" href="css/yidong_index.css">
+<script type="text/javascript" src="js/jquery-1.7.1.min.js"></script>
+<script type="text/javascript" src="js/banner-he.js"></script>
+<script type="text/javascript" src="js/banner.js"></script>
+</head>
+<body>
+<!-- 顶部 -->
+<header>
+    <a href=""><img src="img/xiaoxi.png" alt=""></a>
+    <div class="inpu">
+        <img src="img/sousuo.png" alt="">
+        <input type="text" value="拖鞋">
+    </div>      
+    <a href=""><img src="img/car.png" alt=""></a>
+</header>
+
+<section class="sec">
+<!-- 轮播图 -->
+    <div class="ui-centre">
+        <section id="slider">
+            <div class="demo-item">
+                <div class="demo-block">
+                    <div class="ui-slider" style="padding-top:39.25%">
+                        <ul class="ui-slider-content" style="width: 300%">
+                            <li><span style="background-image:url(img/lb01.jpg)"></span></li>
+                            <li><span style="background-image:url(img/lb02.jpg)"></span></li>
+                            <li><span style="background-image:url(img/lb03.png)"></span></li>
+                            <li><span style="background-image:url(img/lb04.png)"></span></li>
+                            <li><span style="background-image:url(img/lb05.jpg)"></span></li>
+                        </ul>
+                    </div>
+                </div>
+                <script class="demo-script">
+                    (function (){
+                        var slider = new fz.Scroll('.ui-slider', {
+                            role: 'slider',
+                            indicator: true,
+                            autoplay: true,
+                            interval: 5000
+                        });
+
+                        slider.on('beforeScrollStart', function(fromIndex, toIndex) {
+                            console.log(fromIndex,toIndex)
+                        });
+
+                        slider.on('scrollEnd', function(cruPage) {
+                            console.log(cruPage)
+                        });
+                    })();
+                </script>
+            </div>
+        </section>
+    </div>
+<!-- 列表 -->
+    <div class="section_banner">
+        <a href=""><img src="img/y01.png" alt=""><p>充值中心</p></a>
+        <a href=""><img src="img/y02.png" alt=""><p>团购立省</p></a>
+        <a href=""><img src="img/y03.png" alt=""><p>限时快抢</p></a>
+        <a href=""><img src="img/y04.png" alt=""><p>省心套装</p></a>
+        <a href=""><img src="img/y05.png" alt=""><p>签到有礼</p></a>
+        <a href=""><img src="img/y06.png" alt=""><p>当季热卖</p></a>
+        <a href=""><img src="img/y07.png" alt=""><p>裙装裤装</p></a>
+        <a href=""><img src="img/y08.png" alt=""><p>TOP鞋包</p></a>
+        <a href=""><img src="img/y09.png" alt=""><p>美妆个护</p></a>
+        <a href=""><img src="img/y10.png" alt=""><p>气质男装</p></a>
+    </div>
+<!-- 倒计时 -->
+    <div class="section_a">
+        <img src="img/tit.png" alt="">
+        <span>|</span>
+        <div class="spanDiv">
+            <p id="time_h"></p><span>：</span>
+            <p id="time_m"></p><span>：</span>
+            <p id="time_s"></p>
+        </div>
+    </div>
+<!-- 商品展示 -->
+    <div class="section_b">
+        <div class="section_b_a">
+            <a href=""><img src="img/yy02.png" alt=""><p>清爽嫩白补水护肤套装</p><span>￥69.90<i>￥278.00</i></span><b>去拼团</b></a>
+            <a href=""><img src="img/yy01.png" alt=""><p>清爽嫩白补水护肤套装</p><span>￥69.90<i>￥278.00</i></span><b>去拼团</b></a>
+            <a href=""><img src="img/yy03.png" alt=""><p>清爽嫩白补水护肤套装</p><span>￥69.90<i>￥278.00</i></span><b>去拼团</b></a>
+            <a href=""><img src="img/yy02.png" alt=""><p>清爽嫩白补水护肤套装</p><span>￥69.90<i>￥278.00</i></span><b>去拼团</b></a>
+            <a href=""><img src="img/yy01.png" alt=""><p>清爽嫩白补水护肤套装</p><span>￥69.90<i>￥278.00</i></span><b>去拼团</b></a>
+            <a href=""><img src="img/yy03.png" alt=""><p>清爽嫩白补水护肤套装</p><span>￥69.90<i>￥278.00</i></span><b>去拼团</b></a>
+            <a href=""><img src="img/yy02.png" alt=""><p>清爽嫩白补水护肤套装</p><span>￥69.90<i>￥278.00</i></span><b>去拼团</b></a>
+            <a href=""><img src="img/yy01.png" alt=""><p>清爽嫩白补水护肤套装</p><span>￥69.90<i>￥278.00</i></span><b>去拼团</b></a>
+        </div>
+    </div>
+
+<!-- 超实惠-促销直达 -->
+    <div class="section_c">
+        <div class="section_c_tit">
+            <p>超实惠-促销直达</p>
+            <div class="section_c_1">
+                <div class="section_c_1_1">
+                    <p>盛夏新品</p>
+                    <span>尖货直降随新一夏</span>
+                    <img src="img/yy04.png" alt="">
+                </div>
+                <div class="section_c_1_1">
+                    <div class="section_c_1_1_1">
+                        <div class="section_c_1_1_1_tit">
+                            <p>盛夏新品</p>
+                            <span>简约穿搭放心购</span>
+                        </div>                       
+                        <img src="img/yy05.png" alt="">
+                    </div>
+                    <div class="section_c_1_1_1">
+                        <div class="section_c_1_1_1_tit">
+                            <p>盛夏新品</p>
+                            <span>呵护夏日娇嫩肌肤</span>
+                        </div> 
+                        <img src="img/yy06.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="section_c_2">
+                <div class="section_c_2_1">
+                    <p>韩系美鞋</p>
+                    <span>百货嘉年华</span>
+                    <img src="img/yy07.png" alt="">
+                </div>
+                <div class="section_c_2_1">
+                    <p>韩系美鞋</p>
+                    <span>百货嘉年华</span>
+                    <img src="img/yy08.png" alt="">
+                </div>
+                <div class="section_c_2_1">
+                    <p>韩系美鞋</p>
+                    <span>百货嘉年华</span>
+                    <img src="img/yy09.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!-- 精选商品 -->
+    <div class="section_d">
+        <img src="img/jx.png" alt="">
+    </div>
+
+<!-- 选项卡 -->
+    <div class="section_e">
+        <div class="section_e_1">
+            <ul class="uls">
+                <li  class="on">女装</li>
+                <li>男友</li>
+                <li>女鞋</li>
+                <li>美妆</li>
+                <li>家具</li>
+                <li>食品</li>
+                <li>运动</li>
+                <li>内衣</li>
+                <li>母婴</li>
+            </ul>
+        </div>
+        <div class="section_e_2">
+            <ul class="uls ul_li">
+                <li class="focus"><img src="img/nn01.png" alt="">轻薄夏衣</li>
+                <li><img src="img/nn02.png" alt="">连衣裙</li>
+                <li><img src="img/nn03.png" alt="">时尚套装</li>
+                <li><img src="img/nn04.png" alt="">T恤</li>
+                <li><img src="img/nn01.png" alt="">轻薄夏衣</li>
+                <li><img src="img/nn02.png" alt="">连衣裙</li>
+                <li><img src="img/nn03.png" alt="">时尚套装</li>
+                <li><img src="img/nn04.png" alt="">T恤</li>
+            </ul>            
+        </div>
+        <div class="section_pro">
+        	 <!-- 案例一 -->
+        	<div class="product show">
+		        <div class="section_e_3">
+		        	<div class="section_e_3_con">
+		        		<img src="img/n01.png">
+		        		<p>2018夏装新款韩版时尚圆领露肩T恤裙百搭纯色中长款...</p>
+		        		<p><span>￥39.9</span><i>1178<img src="img/star.png"></i></p>
+		        	</div>
+		        	<div class="section_e_3_con">
+		        		<img src="img/n01.png">
+		        		<p>2018夏装新款韩版时尚圆领露肩T恤裙百搭纯色中长款...</p>
+		        		<p><span>￥39.9</span><i>1178<img src="img/star.png"></i></p>
+		        	</div>
+		        	<div class="section_e_3_con">
+		        		<img src="img/n01.png">
+		        		<p>2018夏装新款韩版时尚圆领露肩T恤裙百搭纯色中长款...</p>
+		        		<p><span>￥39.9</span><i>1178<img src="img/star.png"></i></p>
+		        	</div>
+		        	<div class="section_e_3_con">
+		        		<img src="img/n01.png">
+		        		<p>2018夏装新款韩版时尚圆领露肩T恤裙百搭纯色中长款...</p>
+		        		<p><span>￥39.9</span><i>1178<img src="img/star.png"></i></p>
+		        	</div>
+		        	<div class="section_e_3_con">
+		        		<img src="img/n01.png">
+		        		<p>2018夏装新款韩版时尚圆领露肩T恤裙百搭纯色中长款...</p>
+		        		<p><span>￥39.9</span><i>1178<img src="img/star.png"></i></p>
+		        	</div>
+		        	<div class="section_e_3_con">
+		        		<img src="img/n01.png">
+		        		<p>2018夏装新款韩版时尚圆领露肩T恤裙百搭纯色中长款...</p>
+		        		<p><span>￥39.9</span><i>1178<img src="img/star.png"></i></p>
+		        	</div>
+		        </div>
+	        </div>
+	         <!-- 案例二 -->
+	        <div class="product">
+		        <div class="section_e_3">
+		        	<div class="section_e_3_con">
+		        		<img src="img/n02.png">
+		        		<p>2018夏装新款韩版时尚圆领露肩T恤裙百搭纯色中长款...</p>
+		        		<p><span>￥39.9</span><i>1178<img src="img/star.png"></i></p>
+		        	</div>
+		        	<div class="section_e_3_con">
+		        		<img src="img/n02.png">
+		        		<p>2018夏装新款韩版时尚圆领露肩T恤裙百搭纯色中长款...</p>
+		        		<p><span>￥39.9</span><i>1178<img src="img/star.png"></i></p>
+		        	</div>
+		        	<div class="section_e_3_con">
+		        		<img src="img/n02.png">
+		        		<p>2018夏装新款韩版时尚圆领露肩T恤裙百搭纯色中长款...</p>
+		        		<p><span>￥39.9</span><i>1178<img src="img/star.png"></i></p>
+		        	</div>
+		        	<div class="section_e_3_con">
+		        		<img src="img/n02.png">
+		        		<p>2018夏装新款韩版时尚圆领露肩T恤裙百搭纯色中长款...</p>
+		        		<p><span>￥39.9</span><i>1178<img src="img/star.png"></i></p>
+		        	</div>
+		        	<div class="section_e_3_con">
+		        		<img src="img/n02.png">
+		        		<p>2018夏装新款韩版时尚圆领露肩T恤裙百搭纯色中长款...</p>
+		        		<p><span>￥39.9</span><i>1178<img src="img/star.png"></i></p>
+		        	</div>
+		        	<div class="section_e_3_con">
+		        		<img src="img/n02.png">
+		        		<p>2018夏装新款韩版时尚圆领露肩T恤裙百搭纯色中长款...</p>
+		        		<p><span>￥39.9</span><i>1178<img src="img/star.png"></i></p>
+		        	</div>
+		        </div>
+		    </div>
+	         <!-- 案例三 -->
+	        <div class="product">
+		        <div class="section_e_3">
+		        	<div class="section_e_3_con">
+		        		<img src="img/n03.png">
+		        		<p>2018夏装新款韩版时尚圆领露肩T恤裙百搭纯色中长款...</p>
+		        		<p><span>￥39.9</span><i>1178<img src="img/star.png"></i></p>
+		        	</div>
+		        	<div class="section_e_3_con">
+		        		<img src="img/n03.png">
+		        		<p>2018夏装新款韩版时尚圆领露肩T恤裙百搭纯色中长款...</p>
+		        		<p><span>￥39.9</span><i>1178<img src="img/star.png"></i></p>
+		        	</div>
+		        	<div class="section_e_3_con">
+		        		<img src="img/n03.png">
+		        		<p>2018夏装新款韩版时尚圆领露肩T恤裙百搭纯色中长款...</p>
+		        		<p><span>￥39.9</span><i>1178<img src="img/star.png"></i></p>
+		        	</div>
+		        	<div class="section_e_3_con">
+		        		<img src="img/n03.png">
+		        		<p>2018夏装新款韩版时尚圆领露肩T恤裙百搭纯色中长款...</p>
+		        		<p><span>￥39.9</span><i>1178<img src="img/star.png"></i></p>
+		        	</div>
+		        	<div class="section_e_3_con">
+		        		<img src="img/n03.png">
+		        		<p>2018夏装新款韩版时尚圆领露肩T恤裙百搭纯色中长款...</p>
+		        		<p><span>￥39.9</span><i>1178<img src="img/star.png"></i></p>
+		        	</div>
+		        	<div class="section_e_3_con">
+		        		<img src="img/n03.png">
+		        		<p>2018夏装新款韩版时尚圆领露肩T恤裙百搭纯色中长款...</p>
+		        		<p><span>￥39.9</span><i>1178<img src="img/star.png"></i></p>
+		        	</div>
+		        </div>
+		    </div>
+	         <!-- 案例四 -->
+	        <div class="product">
+		        <div class="section_e_3">
+		        	<div class="section_e_3_con">
+		        		<img src="img/n04.png">
+		        		<p>2018夏装新款韩版时尚圆领露肩T恤裙百搭纯色中长款...</p>
+		        		<p><span>￥39.9</span><i>1178<img src="img/star.png"></i></p>
+		        	</div>
+		        	<div class="section_e_3_con">
+		        		<img src="img/n04.png">
+		        		<p>2018夏装新款韩版时尚圆领露肩T恤裙百搭纯色中长款...</p>
+		        		<p><span>￥39.9</span><i>1178<img src="img/star.png"></i></p>
+		        	</div>
+		        	<div class="section_e_3_con">
+		        		<img src="img/n04.png">
+		        		<p>2018夏装新款韩版时尚圆领露肩T恤裙百搭纯色中长款...</p>
+		        		<p><span>￥39.9</span><i>1178<img src="img/star.png"></i></p>
+		        	</div>
+		        	<div class="section_e_3_con">
+		        		<img src="img/n04.png">
+		        		<p>2018夏装新款韩版时尚圆领露肩T恤裙百搭纯色中长款...</p>
+		        		<p><span>￥39.9</span><i>1178<img src="img/star.png"></i></p>
+		        	</div>
+		        	<div class="section_e_3_con">
+		        		<img src="img/n04.png">
+		        		<p>2018夏装新款韩版时尚圆领露肩T恤裙百搭纯色中长款...</p>
+		        		<p><span>￥39.9</span><i>1178<img src="img/star.png"></i></p>
+		        	</div>
+		        	<div class="section_e_3_con">
+		        		<img src="img/n04.png">
+		        		<p>2018夏装新款韩版时尚圆领露肩T恤裙百搭纯色中长款...</p>
+		        		<p><span>￥39.9</span><i>1178<img src="img/star.png"></i></p>
+		        	</div>
+		        </div>
+		    </div>
+	         <!-- 案例五 -->
+	        <div class="product">
+		        <div class="section_e_3">
+		        	<div class="section_e_3_con">
+		        		<img src="img/n05.png">
+		        		<p>2018夏装新款韩版时尚圆领露肩T恤裙百搭纯色中长款...</p>
+		        		<p><span>￥39.9</span><i>1178<img src="img/star.png"></i></p>
+		        	</div>
+		        	<div class="section_e_3_con">
+		        		<img src="img/n05.png">
+		        		<p>2018夏装新款韩版时尚圆领露肩T恤裙百搭纯色中长款...</p>
+		        		<p><span>￥39.9</span><i>1178<img src="img/star.png"></i></p>
+		        	</div>
+		        	<div class="section_e_3_con">
+		        		<img src="img/n05.png">
+		        		<p>2018夏装新款韩版时尚圆领露肩T恤裙百搭纯色中长款...</p>
+		        		<p><span>￥39.9</span><i>1178<img src="img/star.png"></i></p>
+		        	</div>
+		        	<div class="section_e_3_con">
+		        		<img src="img/n05.png">
+		        		<p>2018夏装新款韩版时尚圆领露肩T恤裙百搭纯色中长款...</p>
+		        		<p><span>￥39.9</span><i>1178<img src="img/star.png"></i></p>
+		        	</div>
+		        	<div class="section_e_3_con">
+		        		<img src="img/n05.png">
+		        		<p>2018夏装新款韩版时尚圆领露肩T恤裙百搭纯色中长款...</p>
+		        		<p><span>￥39.9</span><i>1178<img src="img/star.png"></i></p>
+		        	</div>
+		        	<div class="section_e_3_con">
+		        		<img src="img/n05.png">
+		        		<p>2018夏装新款韩版时尚圆领露肩T恤裙百搭纯色中长款...</p>
+		        		<p><span>￥39.9</span><i>1178<img src="img/star.png"></i></p>
+		        	</div>
+		        </div>
+		    </div>
+	         <!-- 案例六 -->
+	        <div class="product">
+		        <div class="section_e_3">
+		        	<div class="section_e_3_con">
+		        		<img src="img/n06.png">
+		        		<p>2018夏装新款韩版时尚圆领露肩T恤裙百搭纯色中长款...</p>
+		        		<p><span>￥39.9</span><i>1178<img src="img/star.png"></i></p>
+		        	</div>
+		        	<div class="section_e_3_con">
+		        		<img src="img/n06.png">
+		        		<p>2018夏装新款韩版时尚圆领露肩T恤裙百搭纯色中长款...</p>
+		        		<p><span>￥39.9</span><i>1178<img src="img/star.png"></i></p>
+		        	</div>
+		        	<div class="section_e_3_con">
+		        		<img src="img/n06.png">
+		        		<p>2018夏装新款韩版时尚圆领露肩T恤裙百搭纯色中长款...</p>
+		        		<p><span>￥39.9</span><i>1178<img src="img/star.png"></i></p>
+		        	</div>
+		        	<div class="section_e_3_con">
+		        		<img src="img/n06.png">
+		        		<p>2018夏装新款韩版时尚圆领露肩T恤裙百搭纯色中长款...</p>
+		        		<p><span>￥39.9</span><i>1178<img src="img/star.png"></i></p>
+		        	</div>
+		        	<div class="section_e_3_con">
+		        		<img src="img/n06.png">
+		        		<p>2018夏装新款韩版时尚圆领露肩T恤裙百搭纯色中长款...</p>
+		        		<p><span>￥39.9</span><i>1178<img src="img/star.png"></i></p>
+		        	</div>
+		        	<div class="section_e_3_con">
+		        		<img src="img/n06.png">
+		        		<p>2018夏装新款韩版时尚圆领露肩T恤裙百搭纯色中长款...</p>
+		        		<p><span>￥39.9</span><i>1178<img src="img/star.png"></i></p>
+		        	</div>
+		        </div>
+		    </div>
+	         <!-- 案例七 -->
+	        <div class="product">
+		        <div class="section_e_3">
+		        	<div class="section_e_3_con">
+		        		<img src="img/n07.png">
+		        		<p>2018夏装新款韩版时尚圆领露肩T恤裙百搭纯色中长款...</p>
+		        		<p><span>￥39.9</span><i>1178<img src="img/star.png"></i></p>
+		        	</div>
+		        	<div class="section_e_3_con">
+		        		<img src="img/n07.png">
+		        		<p>2018夏装新款韩版时尚圆领露肩T恤裙百搭纯色中长款...</p>
+		        		<p><span>￥39.9</span><i>1178<img src="img/star.png"></i></p>
+		        	</div>
+		        	<div class="section_e_3_con">
+		        		<img src="img/n07.png">
+		        		<p>2018夏装新款韩版时尚圆领露肩T恤裙百搭纯色中长款...</p>
+		        		<p><span>￥39.9</span><i>1178<img src="img/star.png"></i></p>
+		        	</div>
+		        	<div class="section_e_3_con">
+		        		<img src="img/n07.png">
+		        		<p>2018夏装新款韩版时尚圆领露肩T恤裙百搭纯色中长款...</p>
+		        		<p><span>￥39.9</span><i>1178<img src="img/star.png"></i></p>
+		        	</div>
+		        	<div class="section_e_3_con">
+		        		<img src="img/n07.png">
+		        		<p>2018夏装新款韩版时尚圆领露肩T恤裙百搭纯色中长款...</p>
+		        		<p><span>￥39.9</span><i>1178<img src="img/star.png"></i></p>
+		        	</div>
+		        	<div class="section_e_3_con">
+		        		<img src="img/n07.png">
+		        		<p>2018夏装新款韩版时尚圆领露肩T恤裙百搭纯色中长款...</p>
+		        		<p><span>￥39.9</span><i>1178<img src="img/star.png"></i></p>
+		        	</div>
+		        </div>
+		    </div>
+	         <!-- 案例八 -->
+	        <div class="product">
+		        <div class="section_e_3">
+		        	<div class="section_e_3_con">
+		        		<img src="img/n08.png">
+		        		<p>2018夏装新款韩版时尚圆领露肩T恤裙百搭纯色中长款...</p>
+		        		<p><span>￥39.9</span><i>1178<img src="img/star.png"></i></p>
+		        	</div>
+		        	<div class="section_e_3_con">
+		        		<img src="img/n08.png">
+		        		<p>2018夏装新款韩版时尚圆领露肩T恤裙百搭纯色中长款...</p>
+		        		<p><span>￥39.9</span><i>1178<img src="img/star.png"></i></p>
+		        	</div>
+		        	<div class="section_e_3_con">
+		        		<img src="img/n08.png">
+		        		<p>2018夏装新款韩版时尚圆领露肩T恤裙百搭纯色中长款...</p>
+		        		<p><span>￥39.9</span><i>1178<img src="img/star.png"></i></p>
+		        	</div>
+		        	<div class="section_e_3_con">
+		        		<img src="img/n08.png">
+		        		<p>2018夏装新款韩版时尚圆领露肩T恤裙百搭纯色中长款...</p>
+		        		<p><span>￥39.9</span><i>1178<img src="img/star.png"></i></p>
+		        	</div>
+		        	<div class="section_e_3_con">
+		        		<img src="img/n08.png">
+		        		<p>2018夏装新款韩版时尚圆领露肩T恤裙百搭纯色中长款...</p>
+		        		<p><span>￥39.9</span><i>1178<img src="img/star.png"></i></p>
+		        	</div>
+		        	<div class="section_e_3_con">
+		        		<img src="img/n08.png">
+		        		<p>2018夏装新款韩版时尚圆领露肩T恤裙百搭纯色中长款...</p>
+		        		<p><span>￥39.9</span><i>1178<img src="img/star.png"></i></p>
+		        	</div>
+		        </div>
+		    </div>
+	         <!-- 案例久 -->
+	        <div class="product">
+		        <div class="section_e_3">
+		        	<div class="section_e_3_con">
+		        		<img src="img/n09.png">
+		        		<p>2018夏装新款韩版时尚圆领露肩T恤裙百搭纯色中长款...</p>
+		        		<p><span>￥39.9</span><i>1178<img src="img/star.png"></i></p>
+		        	</div>
+		        	<div class="section_e_3_con">
+		        		<img src="img/n09.png">
+		        		<p>2018夏装新款韩版时尚圆领露肩T恤裙百搭纯色中长款...</p>
+		        		<p><span>￥39.9</span><i>1178<img src="img/star.png"></i></p>
+		        	</div>
+		        	<div class="section_e_3_con">
+		        		<img src="img/n09.png">
+		        		<p>2018夏装新款韩版时尚圆领露肩T恤裙百搭纯色中长款...</p>
+		        		<p><span>￥39.9</span><i>1178<img src="img/star.png"></i></p>
+		        	</div>
+		        	<div class="section_e_3_con">
+		        		<img src="img/n09.png">
+		        		<p>2018夏装新款韩版时尚圆领露肩T恤裙百搭纯色中长款...</p>
+		        		<p><span>￥39.9</span><i>1178<img src="img/star.png"></i></p>
+		        	</div>
+		        	<div class="section_e_3_con">
+		        		<img src="img/n09.png">
+		        		<p>2018夏装新款韩版时尚圆领露肩T恤裙百搭纯色中长款...</p>
+		        		<p><span>￥39.9</span><i>1178<img src="img/star.png"></i></p>
+		        	</div>
+		        	<div class="section_e_3_con">
+		        		<img src="img/n09.png">
+		        		<p>2018夏装新款韩版时尚圆领露肩T恤裙百搭纯色中长款...</p>
+		        		<p><span>￥39.9</span><i>1178<img src="img/star.png"></i></p>
+		        	</div>
+		        </div>
+		    </div>
+	         <!-- 案例十 -->
+	        <div class="product">
+		        <div class="section_e_3">
+		        	<div class="section_e_3_con">
+		        		<img src="img/n10.png">
+		        		<p>2018夏装新款韩版时尚圆领露肩T恤裙百搭纯色中长款...</p>
+		        		<p><span>￥39.9</span><i>1178<img src="img/star.png"></i></p>
+		        	</div>
+		        	<div class="section_e_3_con">
+		        		<img src="img/n10.png">
+		        		<p>2018夏装新款韩版时尚圆领露肩T恤裙百搭纯色中长款...</p>
+		        		<p><span>￥39.9</span><i>1178<img src="img/star.png"></i></p>
+		        	</div>
+		        	<div class="section_e_3_con">
+		        		<img src="img/n10.png">
+		        		<p>2018夏装新款韩版时尚圆领露肩T恤裙百搭纯色中长款...</p>
+		        		<p><span>￥39.9</span><i>1178<img src="img/star.png"></i></p>
+		        	</div>
+		        	<div class="section_e_3_con">
+		        		<img src="img/n10.png">
+		        		<p>2018夏装新款韩版时尚圆领露肩T恤裙百搭纯色中长款...</p>
+		        		<p><span>￥39.9</span><i>1178<img src="img/star.png"></i></p>
+		        	</div>
+		        	<div class="section_e_3_con">
+		        		<img src="img/n10.png">
+		        		<p>2018夏装新款韩版时尚圆领露肩T恤裙百搭纯色中长款...</p>
+		        		<p><span>￥39.9</span><i>1178<img src="img/star.png"></i></p>
+		        	</div>
+		        	<div class="section_e_3_con">
+		        		<img src="img/n10.png">
+		        		<p>2018夏装新款韩版时尚圆领露肩T恤裙百搭纯色中长款...</p>
+		        		<p><span>￥39.9</span><i>1178<img src="img/star.png"></i></p>
+		        	</div>
+		        </div>
+		    </div>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- 底部 -->
+<footer>
+	<a href=""><img src="img/f01.png">首页</a>
+	<a href=""><img src="img/f02.png">分类</a>
+	<a href=""><img src="img/f03.png">购物车</a>
+	<a href=""><img src="img/f04.png">我的</a>
+</footer>
+
+</body>
+</html>
+<script src="js/daojishi.js"></script>
+<script>
+
+// 倒计时
+$(function(){
+	show_time();
+});
+
+//选项卡点击切换效果
+$(function(){		
+	$('.uls li').click(function(){
+		var liindex = $('.uls li').index(this);
+		$(this).addClass('on').siblings().removeClass('on');
+		$(this).addClass('focus').siblings().removeClass('focus');
+		$('.section_pro div.product').eq(liindex).fadeIn(150).siblings('div.product').hide();
+	});
+});
+
+</script>

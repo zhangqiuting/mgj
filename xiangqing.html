@@ -125,8 +125,7 @@
         <div class="mag_left">
             <div class="preview">                        
                 <div id="vertical" class="bigImg">                        
-                    <img src="img/fangda01.jpg" width="400" height="600" alt="" id="midimg" />                        
-                    <div style="display:none;" id="winSelector"></div>                        
+                    <img src="img/fangda01.jpg" width="400" height="600" alt="" id="midimg" />            
                 </div><!--bigImg end-->	                       
                 <div class="smallImg">                        
                     <div class="scrollbutton smallImgUp disabled"></div>                        
@@ -141,8 +140,7 @@
                         </ul>                       
                     </div>                        
                     <div class="scrollbutton smallImgDown"></div>                        
-                </div><!--smallImg end-->	                        
-                <div id="bigView" style="display:none;"><img width="400" height="500" alt="" src="" /></div>                        
+                </div><!--smallImg end-->	                                              
             </div>
             <div class="precon">
                 <a href=""><p>夏季新款韩版显瘦喇叭袖蕾丝连衣裙女气质娃娃裙仙女裙中长款A字裙内衬雪纺背心吊带裙套装两件套</p></a>
@@ -223,7 +221,7 @@
 <div class="xqy">
     <div class="xqy_con">
         <div class="xqy_left">
-                
+            <img src="img/xq_4.png">
         </div>
         <div class="xqy_center">
             <div class="xqy_center_mid">
@@ -250,7 +248,7 @@
                 </div>            
             </div>
             <div class="xqy_center_right">
-    
+                <img src="img/xq_5.png">
             </div>
         </div>
     </div>   
@@ -433,7 +431,6 @@ $(document).ready(function(){
         $("#bigView img").attr("src", $("#midimg").attr("src").replace("mid", "big"));
     }
     changeViewImg();
-    $("#bigView").scrollLeft(0).scrollTop(0);
     function fixedPosition(e) {
         if (e == null) {
             return;

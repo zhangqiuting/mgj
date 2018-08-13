@@ -230,6 +230,7 @@ img{
                     position: absolute;
                     left: 48px;
                     top: 30px;
+                    z-index: 999;
                     .ull{
                         display: none;
                         li{
@@ -637,30 +638,6 @@ img{
     width: 400px;
     height: 600px;
 }
-.bigImg #winSelector {
-    width: 235px;
-    height: 210px;
-}
-#winSelector {
-    position: absolute;
-    cursor: crosshair;
-    filter: alpha(opacity = 15);
-    -moz-opacity: 0.15;
-    opacity: 0.15;
-    background-color: #000;
-    border: 1px solid#fff;
-}
-/* bigView */
-#bigView {
-    position: absolute;
-    border: 1px solid#959595;
-    overflow: hidden;
-    z-index: 999;
-}
-#bigView img {
-    position: absolute;
-}
-
 
 // 蘑菇拼团
 .mg{
@@ -757,10 +734,16 @@ img{
         margin: 0 auto;
         .xqy_left{
             width: 198px;
-            height: 800px;
+            height: 100%;
             float: left;
             margin-top: 20px;
             border: 1px solid #959595;
+            box-sizing: border-box;
+            img{
+                width: 196px;
+                height: 719px;
+                display: block;
+            }
         }
         .xqy_center{
             float: left;
@@ -769,9 +752,8 @@ img{
             margin-left: 20px;
             .xqy_center_mid{
                 width: 738px;
-                height: 900px;
-                float: left;
-                border-right: 1px solid #959595;
+                height: 100%;
+                float: left; 
                 .x_tit{
                     width: 738px;
                     ul{
@@ -831,8 +813,14 @@ img{
             }
             .xqy_center_right{
                 width: 239px;
-                height: 700px;
+                height: 100%;
                 float: left;
+                border-left: 1px solid #959595;
+                img{
+                    width:239px;
+                    height:719px;
+                    display:block;
+                }
             }
         }
     }   
